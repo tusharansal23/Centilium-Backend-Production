@@ -1,0 +1,899 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "centilium,doe,immigr,offer,servic,what": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "can,centilium,contact,how,i,immigr": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "centilium,immigr,is,locat,where": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "are,centilium,hour,immigr,of,offic,the,what": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "assist,centilium,doe,immigr,permit,provid,studi,with": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "can,centilium,help,immigr,permit,with,work": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "applic,centilium,doe,handl,immigr,of,type,what": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "applic,assist,centilium,citizenship,doe,immigr,provid,with": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "are,centilium,fee,for,immigr,is,servic,the,what": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "assist,can,centilium,immigr,ontario,other,provid,provinc,than,to,with": {
+            "intent": "centilium.basic",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "centilium.basic": "default",
+          "greetings.bye": "default",
+          "greetings.hello": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "What services does Centilium Immigration offer?",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I contact Centilium Immigration",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where is Centilium Immigration located",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are the office hours of Centilium Immigration",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "Does Centilium Immigration provide assistance with study permits",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can Centilium Immigration help with work permits",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "What types of immigration applications does Centilium Immigration handle",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "Does Centilium Immigration provide assistance with citizenship applications?",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are the fees for Centilium Immigration's services?",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can Centilium Immigration provide assistance with immigration to provinces other than Ontario?",
+            "intent": "centilium.basic"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings",
+            "intent": "greetings.hello"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "what": 1,
+              "servic": 1,
+              "doe": 1,
+              "centilium": 1,
+              "immigr": 1,
+              "offer": 1,
+              "how": 1,
+              "can": 1,
+              "i": 1,
+              "contact": 1,
+              "where": 1,
+              "is": 1,
+              "locat": 1,
+              "are": 1,
+              "the": 1,
+              "offic": 1,
+              "hour": 1,
+              "of": 1,
+              "provid": 1,
+              "assist": 1,
+              "with": 1,
+              "studi": 1,
+              "permit": 1,
+              "help": 1,
+              "work": 1,
+              "type": 1,
+              "applic": 1,
+              "handl": 1,
+              "citizenship": 1,
+              "fee": 1,
+              "for": 1,
+              "to": 1,
+              "provinc": 1,
+              "other": 1,
+              "than": 1,
+              "ontario": 1,
+              "goodby": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "now": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "greet": 1
+            },
+            "intents": {
+              "centilium.basic": 1,
+              "greetings.bye": 1,
+              "greetings.hello": 1
+            },
+            "intentFeatures": {
+              "centilium.basic": {
+                "what": 1,
+                "servic": 1,
+                "doe": 1,
+                "centilium": 1,
+                "immigr": 1,
+                "offer": 1,
+                "how": 1,
+                "can": 1,
+                "i": 1,
+                "contact": 1,
+                "where": 1,
+                "is": 1,
+                "locat": 1,
+                "are": 1,
+                "the": 1,
+                "offic": 1,
+                "hour": 1,
+                "of": 1,
+                "provid": 1,
+                "assist": 1,
+                "with": 1,
+                "studi": 1,
+                "permit": 1,
+                "help": 1,
+                "work": 1,
+                "type": 1,
+                "applic": 1,
+                "handl": 1,
+                "citizenship": 1,
+                "fee": 1,
+                "for": 1,
+                "to": 1,
+                "provinc": 1,
+                "other": 1,
+                "than": 1,
+                "ontario": 1
+              },
+              "greetings.bye": {
+                "goodby": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "for": 1,
+                "now": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdi": 1,
+                "greet": 1
+              }
+            },
+            "featuresToIntent": {
+              "what": [
+                "centilium.basic"
+              ],
+              "servic": [
+                "centilium.basic"
+              ],
+              "doe": [
+                "centilium.basic"
+              ],
+              "centilium": [
+                "centilium.basic"
+              ],
+              "immigr": [
+                "centilium.basic"
+              ],
+              "offer": [
+                "centilium.basic"
+              ],
+              "how": [
+                "centilium.basic"
+              ],
+              "can": [
+                "centilium.basic"
+              ],
+              "i": [
+                "centilium.basic",
+                "greetings.bye"
+              ],
+              "contact": [
+                "centilium.basic"
+              ],
+              "where": [
+                "centilium.basic"
+              ],
+              "is": [
+                "centilium.basic"
+              ],
+              "locat": [
+                "centilium.basic"
+              ],
+              "are": [
+                "centilium.basic"
+              ],
+              "the": [
+                "centilium.basic"
+              ],
+              "offic": [
+                "centilium.basic"
+              ],
+              "hour": [
+                "centilium.basic"
+              ],
+              "of": [
+                "centilium.basic"
+              ],
+              "provid": [
+                "centilium.basic"
+              ],
+              "assist": [
+                "centilium.basic"
+              ],
+              "with": [
+                "centilium.basic"
+              ],
+              "studi": [
+                "centilium.basic"
+              ],
+              "permit": [
+                "centilium.basic"
+              ],
+              "help": [
+                "centilium.basic"
+              ],
+              "work": [
+                "centilium.basic"
+              ],
+              "type": [
+                "centilium.basic"
+              ],
+              "applic": [
+                "centilium.basic"
+              ],
+              "handl": [
+                "centilium.basic"
+              ],
+              "citizenship": [
+                "centilium.basic"
+              ],
+              "fee": [
+                "centilium.basic"
+              ],
+              "for": [
+                "centilium.basic",
+                "greetings.bye"
+              ],
+              "to": [
+                "centilium.basic"
+              ],
+              "provinc": [
+                "centilium.basic"
+              ],
+              "other": [
+                "centilium.basic"
+              ],
+              "than": [
+                "centilium.basic"
+              ],
+              "ontario": [
+                "centilium.basic"
+              ],
+              "goodby": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "greet": [
+                "greetings.hello"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "what",
+                "servic",
+                "doe",
+                "centilium",
+                "immigr",
+                "offer",
+                "how",
+                "can",
+                "i",
+                "contact",
+                "where",
+                "is",
+                "locat",
+                "are",
+                "the",
+                "offic",
+                "hour",
+                "of",
+                "provid",
+                "assist",
+                "with",
+                "studi",
+                "permit",
+                "help",
+                "work",
+                "type",
+                "applic",
+                "handl",
+                "citizenship",
+                "fee",
+                "for",
+                "to",
+                "provinc",
+                "other",
+                "than",
+                "ontario",
+                "goodby",
+                "bye",
+                "take",
+                "care",
+                "see",
+                "you",
+                "later",
+                "now",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "howdi",
+                "greet"
+              ],
+              "intents": [
+                "centilium.basic",
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "perceptrons": [
+                [
+                  1.3883408308029175,
+                  0.7037832736968994,
+                  1.325687050819397,
+                  4.831798076629639,
+                  4.831798076629639,
+                  0.7323881387710571,
+                  1.0484219789505005,
+                  1.6080231666564941,
+                  0.4458416700363159,
+                  1.0484219789505005,
+                  1.3930193185806274,
+                  1.364387035369873,
+                  1.3930193185806274,
+                  0.5050316452980042,
+                  0.5050316452980042,
+                  0.5336520671844482,
+                  0.5336520671844482,
+                  0.6845605373382568,
+                  0.5360844135284424,
+                  0.5360844135284424,
+                  1.0020081996917725,
+                  0.1427469402551651,
+                  0.6085963845252991,
+                  0.46590185165405273,
+                  0.46590185165405273,
+                  0.15090449154376984,
+                  0.45056894421577454,
+                  0.15090449154376984,
+                  0.2996669113636017,
+                  -0.028633669018745422,
+                  -0.2871524393558502,
+                  0.0936904102563858,
+                  0.0936904102563858,
+                  0.0936904102563858,
+                  0.0936904102563858,
+                  0.0936904102563858,
+                  -0.508074164390564,
+                  -0.518359363079071,
+                  -0.24089299142360687,
+                  -0.24089299142360687,
+                  -0.28793272376060486,
+                  -0.28793272376060486,
+                  -0.28793272376060486,
+                  -0.210402712225914,
+                  -0.5659492015838623,
+                  -0.5659492015838623,
+                  -0.47809046506881714,
+                  -0.47366517782211304,
+                  -0.4714968502521515,
+                  -0.4702616333961487,
+                  0.471451204345184
+                ],
+                [
+                  -0.6077924966812134,
+                  -0.4883330166339874,
+                  -0.36072975397109985,
+                  -1.9249141216278076,
+                  -1.9249141216278076,
+                  -0.2129724770784378,
+                  -0.8840184807777405,
+                  -0.9371808767318726,
+                  2.9684948921203613,
+                  -0.8840184807777405,
+                  -0.18057160079479218,
+                  -0.4623378813266754,
+                  -0.18057160079479218,
+                  -0.3366084396839142,
+                  -0.3366084396839142,
+                  -0.07438864558935165,
+                  -0.07438864558935165,
+                  -0.09092456102371216,
+                  -0.09296790510416031,
+                  -0.09296790510416031,
+                  -0.14657460153102875,
+                  -0.055901821702718735,
+                  -0.11327702552080154,
+                  -0.03576667234301567,
+                  -0.03576667234301567,
+                  -0.004499122034758329,
+                  -0.023255692794919014,
+                  -0.004499122034758329,
+                  -0.014819839037954807,
+                  -0.22798378765583038,
+                  2.500737428665161,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  10.293783187866211,
+                  5.405716896057129,
+                  2.6359846591949463,
+                  2.6359846591949463,
+                  3.5585548877716064,
+                  3.5585548877716064,
+                  3.5585548877716064,
+                  2.7694242000579834,
+                  3.8524703979492188,
+                  3.8524703979492188,
+                  -3.530092477798462,
+                  -3.5118727684020996,
+                  -3.492907762527466,
+                  -3.4732208251953125,
+                  3.5895392833912863
+                ],
+                [
+                  -0.721714198589325,
+                  -0.3588349223136902,
+                  -0.6920526623725891,
+                  -2.3117477893829346,
+                  -2.3117477893829346,
+                  -0.3588349223136902,
+                  -0.2835548222064972,
+                  -0.6536650657653809,
+                  -2.4589426517486572,
+                  -0.2835548222064972,
+                  -0.7046114206314087,
+                  -0.7046114206314087,
+                  -0.7046114206314087,
+                  -0.2613251209259033,
+                  -0.2613251209259033,
+                  -0.2613251209259033,
+                  -0.2613251209259033,
+                  -0.3468553423881531,
+                  -0.2951204478740692,
+                  -0.2951204478740692,
+                  -0.5526475310325623,
+                  -0.1244470477104187,
+                  -0.39253076910972595,
+                  -0.25749316811561584,
+                  -0.25749316811561584,
+                  -0.08549732714891434,
+                  -0.18215630948543549,
+                  -0.08549732714891434,
+                  -0.09662332385778427,
+                  0,
+                  -1.6774669885635376,
+                  -0.06343358755111694,
+                  -0.06343358755111694,
+                  -0.06343358755111694,
+                  -0.06343358755111694,
+                  -0.06343358755111694,
+                  -6.339600086212158,
+                  -3.3574013710021973,
+                  -1.6794222593307495,
+                  -1.6794222593307495,
+                  -2.237482786178589,
+                  -2.237482786178589,
+                  -2.237482786178589,
+                  -1.6774669885635376,
+                  -2.12624192237854,
+                  -2.12624192237854,
+                  7.4711809158325195,
+                  7.487072467803955,
+                  7.4578022956848145,
+                  7.426869869232178,
+                  6.735032935479571
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "What services does Centilium Immigration offer?"
+      ],
+      [
+        "en",
+        "How can I contact Centilium Immigration"
+      ],
+      [
+        "en",
+        "Where is Centilium Immigration located"
+      ],
+      [
+        "en",
+        "What are the office hours of Centilium Immigration"
+      ],
+      [
+        "en",
+        "Does Centilium Immigration provide assistance with study permits"
+      ],
+      [
+        "en",
+        "Can Centilium Immigration help with work permits"
+      ],
+      [
+        "en",
+        "What types of immigration applications does Centilium Immigration handle"
+      ],
+      [
+        "en",
+        "Does Centilium Immigration provide assistance with citizenship applications?"
+      ],
+      [
+        "en",
+        "What are the fees for Centilium Immigration's services?"
+      ],
+      [
+        "en",
+        "Can Centilium Immigration provide assistance with immigration to provinces other than Ontario?"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye take care"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "Greetings"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "centilium.basic": [
+          {
+            "answer": "Centilium Immigration offers a wide range of immigration services, including visa applications, study permits, work permits, permanent residency applications, and citizenship applications."
+          },
+          {
+            "answer": "You can contact Centilium Immigration by phone at +1 647-324-8308 or by email at team@centiliumimmigration.com. Additionally, you can visit their office located at 301, Robert Parkinson Drive, Brampton, ON L7A4W9."
+          },
+          {
+            "answer": "Centilium Immigration is located at 301, Robert Parkinson Drive, Brampton, ON L7A4W9"
+          },
+          {
+            "answer": "The office hours of Centilium Immigration are usually provided on their website. You can check their website or contact them directly for the most up-to-date information on office hours."
+          },
+          {
+            "answer": "Yes, Centilium Immigration provides assistance with study permits for individuals who wish to study in Canada."
+          },
+          {
+            "answer": "Yes, Centilium Immigration can assist with work permits for individuals who want to work in Canada temporarily or permanently."
+          },
+          {
+            "answer": "Centilium Immigration handles various types of immigration applications, including skilled worker applications, family sponsorship, business immigration, and humanitarian and compassionate grounds applications."
+          },
+          {
+            "answer": "Yes, Centilium Immigration can help with citizenship applications for individuals who are eligible to become Canadian citizens."
+          },
+          {
+            "answer": "The fees for Centilium Immigration's services may vary depending on the type of service and the complexity of the case. It's best to contact them directly for a consultation and to discuss fees."
+          },
+          {
+            "answer": "Yes, Centilium Immigration can provide assistance with immigration to provinces across Canada, not just Ontario. They have experience handling immigration cases for various provinces and territories."
+          }
+        ],
+        "greetings.bye": [
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "bye bye"
+          },
+          {
+            "answer": "have a great day"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hello"
+          },
+          {
+            "answer": "Hi"
+          },
+          {
+            "answer": "Greetings"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
