@@ -1,0 +1,8 @@
+{
+    "name": "centiliumimmigration-backend",
+    "version": 2,
+    "routes": [
+      { "src": "/(.*)", "dest": "index.js" }
+    ]
+  }
+  
