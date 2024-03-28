@@ -1,8 +1,0 @@
-{
-    "name": "Centilium-Backend-Production",
-    "version": 2,
-    "routes": [
-      { "src": "/", "dest": "index.js" }
-    ]
-  }
-  
